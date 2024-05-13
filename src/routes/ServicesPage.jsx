@@ -4,6 +4,9 @@ import zorange from '../assets/zorange.svg'
 import star from '../assets/star.svg'
 import anim2 from '../assets/anim2.json'
 import Lottie from 'lottie-web' //to import this, you need to 'npm i lottie-web' on terminal
+
+import Brand from '../Branding'
+
 export default function ServicesPage() {
 
     useEffect(() => {
@@ -56,7 +59,7 @@ export default function ServicesPage() {
                 </div>
             </div>
             <div className='h-screen w-full bg-zinc-900'>
-
+                <Brand />
             </div>
         </div>
     )
