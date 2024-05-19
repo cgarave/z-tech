@@ -17,27 +17,27 @@ export default {
           to: {transform: 'translateX(50%)'},
         },
         branding: {
-          '0%': {top: '2.5rem', left: '26rem'},
-          '50%': {top: '2.5rem', left: '26rem'},
-          '100%': {top: '7rem', left: '31rem'}
+          '0%': {transform: 'translate(-15rem, 2.5rem)'},
+          '50%': {transform: 'translate(-15rem, 2.5rem)'},
+          '100%': {transform: 'translate(-10rem, 7rem)'}
         },
         needs: {
-          '0%': {top: '2.5rem', right: '26rem'},
-          '50%': {top: '2.5rem', right: '26rem'},
-          '100%': {top: '7rem', right: '31rem'}
+          '0%': {transform: 'translate(15rem, 2.5rem)'},
+          '50%': {transform: 'translate(15rem, 2.5rem)'},
+          '100%': {transform: 'translate(10rem, 7rem)'}
         },
         customers: {
-          '0%': {bottom: '5rem'},
-          '50%': {bottom: '5rem'},
-          '100%': {bottom: '7rem'}
+          '0%': {transform: 'translateY(28rem)'},
+          '50%': {transform: 'translateY(28rem)'},
+          '100%': {transform: 'translateY(24rem)'}
         },
         text: {
           from: {bottom: '-10rem'},
           to: {bottom: '0px'}
         },
         line: {
-          from: {height: '0'},
-          to: {height: '13rem'}
+          from: {height: '0', opacity: '0%'},
+          to: {height: '17rem', opacity: '100%'}
         }
       },
       animation: {
@@ -49,7 +49,7 @@ export default {
         text1: 'text 0.3s cubic-bezier(.47,.03,.11,.85) forwards',
         text2: 'text 0.6s cubic-bezier(.47,.03,.11,.85) forwards',
         text3: 'text 1.2s cubic-bezier(.47,.03,.11,.85) forwards',
-        line: 'line 2s cubic-bezier(.47,.03,.11,.85) forwards'
+        line: 'line 2s 2s cubic-bezier(.47,.03,.11,.85) forwards'
       },
     },
   },
